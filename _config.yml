@@ -1,89 +1,142 @@
 
 # Site settings
 
-url: "http://jamesralexander.com/"
+# NB! Set your site's url, otherwise stuff will break :)
+
+url: "https://tanych.github.io"
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (https://yourusername.github.io/repository-name)
 # and NOT your user repository (https://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
+#
+# NB! Without this *nothing* will work, because it's used in every path :)
 
-# baseurl: /
-permalink: /blog/content/:title
+baseurl: /personal-jekyll-theme
 
-# google-tracking-id: "<YOUR GOOGLE TRACKING ID>"
+# Google tracking id to track your visitors
+
+google-tracking-id: "UA-35880426-4"
 
 # Forces https everywhere in your website, except when you serve it locally
+# If you are not hosted on Github Pages, and your host doesn't support https
+# then you should disable it
 
-# force-https: False
+force-https: False
 
 #############
 # HTML Head #
 #############
 
-author: "James Alexander"
 lang: "en"
-title: "{ Tales from the Whitespace }"
-favicon: "/img/HeyJames.ico"
-description: "Blog and website of James Alexander, blogging mainly for tech and ballroom dance. Opinions expressed are mine."
-keywords: "james, alexander, yanigisawa, ballroom, dance, python, raspberry, pi, jekyll, theme"
+author: "Yecheng Tan"
+title: "Victor"
+description: "This is the personal page for Yecheng Tan, a student from the George Washington University."
+keywords: "Yecheng Tan, victor, gwu, creativeness, jekyll"
+favicon: "/img/logo_32.png"
 
 ################
-# Intro layout #
+# Header layout #
 ################
 
-# black-favicon: "/img/black-lab-glass.ico"
-background-img: "../img/Pearl-Lake-Blue-Water.jpg"
-me-img: "/img/ProfilePic.png"
+black-favicon: "/img/logo_32.png"
+
+background-img: "../img/background.jpg"
 
 ##############################
-# Dynamic Text on the header #
+# Dynamic Text on the Header #
 ##############################
 
 dynamic-typing: True
-shuffle: False # Shuffle the lines.
+shuffle: True # Shuffle the lines.
 loop: True
-loop-count:	False # Set False for infinite loop, or set any number for finite loop.
-type-speed:	10		# Default 10
-start-delay: 200	# Default 200
-delete-delay: 5000	# Default 5000
-lines:			# You can add HTML Tags in the Text
-  - text: "No matter where you go, there you are."
-  - text: "Software Developer by day, Ballroom dancer by night."
+loop-count: False # Set False for infinite loop, or set any number for finite loop.
+type-speed: 10
+start-delay: 200
+delete-delay: 2000
+lines: # You can add HTML Tags in the Text
+  - text: "If we don't change, we don't grow."
+  - text: "If we don't grow, we aren't really living."
+  - text: "By Gail Sheehy."
+
+me-img: "/img/logo.png"
+
+##############################
+# Color the browser elements #
+##############################
+color-browser: "#000000"
+apple-status-bar-style: "black"
+
+################
+# Web app mode #
+################
+
+web-app-mode: True
+
+# Icons for Web App mode
+
+icon-36p: "/img/web-app/icon-36.png"
+icon-48p: "/img/web-app/icon-48.png"
+icon-72p: "/img/web-app/icon-72.png"
+icon-96p: "/img/web-app/icon-96.png"
+icon-144p: "/img/web-app/icon-144.png"
+icon-192p: "/img/web-app/icon-192.png"
 
 ########
 # Blog #
 ########
 
-post-preview-words: 128
+post-preview-words: 96
 
 paginate: 5
 
+email-share: True
 fb-share: True
 twitter-share: True
-reddit-share: False
-disqus-shortname: "yanigisawa"
+linkedin-share: True
+reddit-share: True
+google-plus-share: True
+tumblr-share: True
+pinterest-share: True
+pocket-share: True
+vkontakte-share: True
 
-###############
-# Life Events #
-###############
+disqus-shortname: "victor"
+
+syntax-highlight: True
+
+############
+# Timeline #
+############
 
 events:
-  - image: "/img/career/spidertocat.png"
+  - image: "/img/timeline/spidertocat.png"
     date: "September 2013 - Today"
     description: "Saving the neighborhood!"
-  - image: "/img/career/baracktocat.jpg"
+  - image: "/img/timeline/baracktocat.jpg"
     date: "September 2007 - August 2013"
     description: "Started coding"
 
-# First image of the Career timeline
-career-img: "/img/career/default.png"
+# First image of the Timeline
 
-##################
-# Contact layout #
-##################
+timeline-img: "/img/timeline/default.png"
 
-email: "james@jamesralexander.com"
+###########
+# Contact #
+###########
+
+email: "ychtan@gwu.edu"
+
+################
+# Author Blurb #
+################
+
+# The author blurb goes underneath blog posts.
+# This works best when your author blurb image has a transparent background, or matches your site background color.
+
+# if the author_blurb is not set, then this feature is skipped
+author_blurb: "Yecheng Tan, a student from the George Washington University, on the way to make creativeness be anywhere."
+author_blurb_image: "/img/author.jpg"
 
 ##################
 # Social Buttons #
@@ -91,15 +144,11 @@ email: "james@jamesralexander.com"
 
 social:
   - title: "facebook"
-    url: "https://facebook.com/yanigisawa"
+    url: "https://facebook.com/"
   - title: "twitter"
-    url: "https://twitter.com/yanigisawa"
-  - title: "youtube"
-    url: "https://youtube.com/yanigisawa"
+    url: "https://twitter.com/"
   - title: "github"
-    url: "https://github.com/yanigisawa"
-  - title: "linkedin"
-    url: "https://www.linkedin.com/in/yanigisawa"
+    url: "https://github.com/Tanych"
   - title: "rss"
     url: "/feed.xml"
 
@@ -107,30 +156,33 @@ social:
 # 404 page #
 ############
 
-404-img: "/img/labtocat.png"
+404-img: "/img/404.png"
 
 ################################################################################
 
-# Tread carefully if you want to change the variables below this point!
+# NB! Tread carefully if you want to change the variables below this point!
 
-# Navigation bar links
-# Blog link in the blog and post pages will point to the blog.html#blog
-# In the default page it will point to the preview of the last post
+# Sections shown in the index page
 
 pages_list:
   About: 'about'
-  Blog: 'blog'
-  # Career: 'career'
+  Blog: 'latest-post'
+  Timeline: 'timeline'
   Contact: 'contact'
 
+# Exclusion list from the generated _site
+
+exclude: ["LICENSE", "README.md", "CONTRIBUTING", "CONTRIBUTORS", "scripts"]
+
 # Pagination path
-paginate_path: "blog/page:num"
+
+paginate_path: "blog/page:num/"
 
 # Enable minification SASS
+
 sass:
   style: compressed
 
-# Exclusion list from the generated _site
-exclude: ["Rakefile", "LICENSE", "readme.markdown", "vendor"]
-highlighter: pygments
-markdown: kramdown
+gems:
+  - jekyll-paginate
+  - jemoji
