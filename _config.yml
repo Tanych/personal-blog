@@ -55,9 +55,9 @@ type-speed: 10
 start-delay: 200
 delete-delay: 2000
 lines: # You can add HTML Tags in the Text
-  - text: "If we don't change, we don't grow."
-  - text: "If we don't grow, we aren't really living."
-  - text: "By Gail Sheehy."
+  - text: "Change is inevitable."
+  - text: "Change is constant."
+  - text: "By Benjamin Disraeli."
 
 me-img: "/img/logo.png"
 
@@ -110,12 +110,18 @@ syntax-highlight: True
 ############
 
 events:
-  - image: "/img/timeline/spidertocat.png"
-    date: "September 2013 - Today"
-    description: "Saving the neighborhood!"
-  - image: "/img/timeline/baracktocat.jpg"
-    date: "September 2007 - August 2013"
-    description: "Started coding"
+  - image: "/img/timeline/gwu-156.png"
+    date: "Auguest 2015 - Now"
+    description: "A graduate student at the George Washington University"
+  - image: "/img/timeline/fiberhome-156.png"
+    date: "July 2012 - February 2014"
+    description: "Worked as a research engineer in FiberHome, Nanjing"
+  - image: "/img/timeline/hohai-156.png"
+    date: "September 2008 - June 2012"
+    description: "Graduated from Hohai University"
+  - image: "/img/timeline/vb-156.png"
+    date: "September 2007"
+    description: "First contacted with coding"
 
 # First image of the Timeline
 
@@ -143,14 +149,14 @@ author_blurb_image: "/img/author.jpg"
 ##################
 
 social:
-  - title: "facebook"
-    url: "https://facebook.com/"
   - title: "twitter"
-    url: "https://twitter.com/"
+    url: "https://twitter.com/tanych5233"
   - title: "github"
     url: "https://github.com/Tanych"
-  - title: "rss"
-    url: "/feed.xml"
+  - title: "linkedin"
+    url: "https://www.linkedin.com/in/ychtan"
+  - title: "weibo"
+    url: "http://weibo.com/u/1700022427"
 
 ############
 # 404 page #
@@ -166,8 +172,8 @@ social:
 
 pages_list:
   About: 'about'
-  Blog: 'latest-post'
-  Timeline: 'timeline'
+  Blog: 'blog'
+  Career: 'career'
   Contact: 'contact'
 
 # Exclusion list from the generated _site
