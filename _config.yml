@@ -111,21 +111,21 @@ syntax-highlight: True
 
 events:
   - image: "/img/timeline/gwu-156.png"
-    date: "Auguest 2015 - Now"
+    date: "Aug. 2015 - Now"
     description: "A graduate student at the George Washington University"
   - image: "/img/timeline/fiberhome-156.png"
-    date: "July 2012 - February 2014"
+    date: "Jul. 2012 - Feb. 2014"
     description: "Worked as a research engineer in FiberHome, Nanjing"
   - image: "/img/timeline/hohai-156.png"
-    date: "September 2008 - June 2012"
+    date: "Sep. 2008 - Jun. 2012"
     description: "Graduated from Hohai University"
   - image: "/img/timeline/vb-156.png"
-    date: "September 2007"
+    date: "Sep. 2007"
     description: "First contacted with coding"
 
 # First image of the Timeline
 
-timeline-img: "/img/timeline/default.png"
+career-img: "/img/author.jpg"
 
 ###########
 # Contact #

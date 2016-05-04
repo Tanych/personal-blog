@@ -9,14 +9,16 @@
         {{ page.content | markdownify }}
 
         {% assign post = site.posts.first %}
-        <h4> <strong> {{ post.date | date_to_string }} </strong>
-          <small>. {{ post.category }} .</small>
+        <h4 class='align-left'>
           <strong> <a href="{{site.baseurl}}{{ post.url }}">{{post.title}} </a> </strong>
-          <small> <a href="{{site.baseurl}}{{post.url}}#disqus_thread">Comments</a></small>
-        </h4>
+          <i class="fa fa-male "> </i>
+          <small>  {{ post.author }} </small>
 
+          <i class="fa fa-clock-o "> </i>
+          <small>  {{ post.date | date_to_string }} </small>
+        </h4>
         <div class='align-left'>
-        {{ post.content | truncatewords: site.post-preview-words | strip_html | markdownify }}
+        {{ post.excerpt |  markdownify }}
         </div>
 
         <h4><a href="{{site.baseurl}}/blog/index.html">View more posts</a></h4>

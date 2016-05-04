@@ -24,8 +24,8 @@ html {
 }
 
 h1,
+h2,
 h3,
-h4,
 h5,
 h6 {
     margin: 0 0 35px;
@@ -35,16 +35,15 @@ h6 {
     letter-spacing: 1px;
 }
 
-
-h2 {
-    padding: 100px;
+h4 {
     margin: 0 0 35px;
-    text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+    font-size: 20px;
     letter-spacing: 1px;
-    text-align: center;
 }
+
+
 
 p {
     margin: 0 0 25px;
@@ -478,7 +477,7 @@ pre code {
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
-    background-color: mui-color('blue-grey', '500');
+    /*background-color: mui-color('blue-grey', '500');*/
     background-size: cover;
     min-height: 180px;
     position: relative;
