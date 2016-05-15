@@ -2,11 +2,9 @@
 <!-- Post List Start -->
  <h4 class='align-left'>
     <strong> <a href="{{site.baseurl}}{{ post.url }}">{{post.title}} </a> </strong>
-    <i class="fa fa-male "> </i>
-    <small>  {{ post.author }} </small>
-
-    <i class="fa fa-clock-o "> </i>
-    <small>  {{ post.date | date_to_string }} </small>
+     <br>
+     <small> <i class="fa fa-male "> {{ post.author }} </i> </small>
+     <small>  <i class="fa fa-calendar" title="Date published"> {{ post.date | date_to_string }} </i> </small>
  </h4>
 <div class='align-left'>
     {{ post.excerpt |  markdownify }}
