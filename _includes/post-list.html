@@ -3,8 +3,15 @@
  <h4 class='align-left'>
     <strong> <a href="{{site.baseurl}}{{ post.url }}">{{post.title}} </a> </strong>
      <br>
-     <small> <i class="fa fa-male "> {{ post.author }} </i> </small>
+     <small> <i class="fa fa-user "> {{ post.author }} </i> </small>
      <small>  <i class="fa fa-calendar" title="Date published"> {{ post.date | date_to_string }} </i> </small>
+     <small>
+         <i class="fa fa-tag" title="tag"></i>
+        <a class="category" href="{{site.baseurl}}/categories/{{ post.category | downcase }}.html">
+         {{ post.category }}
+        </a>
+     </small>
+      <small><i class="fa fa-commenting-o" aria-hidden="true"></i><a href="{{site.baseurl}}{{post.url}}#disqus_thread">Comments</a></small>
  </h4>
 <div class='align-left'>
     {{ post.excerpt |  markdownify }}
